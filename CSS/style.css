@@ -1,0 +1,253 @@
+:root{
+    --cor0: #166088;
+    --cor1: #3581b8;
+    --cor2: #878787;
+    --cor3: #cacaca;
+    --cor4: #202022;
+    --cor5: black;
+    --cor6: white;
+
+    --font:     font-family: Arial, Helvetica, sans-serif;;
+}
+*{
+    margin: 0px;
+    padding: 0PX;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor6);
+} 
+
+/*Cabecalho*/
+
+.header{
+    background-color: var(--cor0);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.header p{
+    color: var(--cor6);
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    display: block;
+    color: var(--cor6);
+    padding: 5px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: var(--cor6);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 6px;
+    color: var(--cor5);
+}
+.bg{
+    background-image: url('../imagens/Home.jpg'); /* Adicione o caminho da sua imagem */
+    background-size: cover; /* Cobre toda a área da div com a imagem */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Altura total da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    padding: 20px;
+}
+h4{
+    text-align: center;
+    font-size: larger;
+    padding: 100px;
+    align-items: center;
+    text-shadow: var(--cor5) 1px 1px 2px;
+    font-size: 1.5rem;
+    color: var(--cor6);
+}
+
+h1{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+h2{
+    text-align: center;
+    margin: 70px;
+}
+img{
+    max-width: 100%;
+    display: block; 
+}
+.flex h3{
+    text-align: center;
+    padding: 10px;
+    color: black;
+    
+}
+.flex p{
+    padding: 7px;
+    font-size: 16px;
+    color: black;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    box-shadow: black 0.1px 0.1px 2px;
+    border-radius: 3px;
+}
+.flex div:hover{
+    box-shadow: black -1px -1px 10px;
+    margin: 1px;
+}
+
+/* Rodape */
+
+.footer {
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.interface {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.rodape {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.paginas, .genericas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--cor6);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor5);
+    background-color: var(--cor6);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.redes .media ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+}
+
+.media ul li:hover{
+    color: var(--cor4);
+
+}
+.media ul li {
+    margin: 0 10px;
+}
+
+.media ul li a {
+    display: inline-block;
+}
+
+.direito {
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--cor6);
+}
+
+
+/* Responsividade para o footer */
+@media (max-width: 768px) {
+    /* Ajustes no footer */
+    .footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .footer .interface {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .paginas, .footer .genericas, .footer .redes {
+        margin-bottom: 15px;
+    }
+
+    .footer .media ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer .media ul li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes no footer */
+    .footer {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .footer .interface {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer .paginas, .footer .genericas, .footer .redes {
+        margin-bottom: 10px;
+    }
+
+    .footer .media ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer .media ul li {
+        margin: 0 10px;
+    }
+}
+

@@ -1,0 +1,320 @@
+:root {
+    --cor0: #166088;
+    --cor1: #3581b8;
+    --cor2: #878787;
+    --cor3: #cacaca;
+    --cor4: #202022;
+    --cor5: black;
+    --cor6: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+/*Cabecalho*/
+
+.header{
+    background-color: var(--cor0);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.tema{
+    color: var(--cor0);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.header p{
+    color: var(--cor6);
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    display: block;
+    color: var(--cor6);
+    padding: 5px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: var(--cor6);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 6px;
+    color: var(--cor5);
+}
+
+/* Background da Página Inicial */
+.bg {
+    background-image: url('../imagens/Blog\ 1.jpg'); /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor5);
+    padding: 20px;
+}
+
+.bg h1 {
+    padding: 50px; /* Ajuste para centralização e melhor exibição em dispositivos menores */
+    text-shadow: var(--cor6) 1px 1px 3px;
+    font-size: 2.5em; /* Reduz o tamanho do texto em dispositivos móveis */
+    max-width: 90%;
+}
+
+/* Estilo para a Barra de Pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute; /* Tornar o container posicionado de forma absoluta */
+    right: 220px;
+    margin: 40px;
+    box-shadow: var(--cor5) 1px 1px 3px;   
+}
+
+.search-container:hover{
+    box-shadow: var(--cor5) 1px 1px 5px; 
+}
+
+.search-input {
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--cor0);
+}
+
+/*Conteudo*/
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.resenha p{
+    margin: 10px 5px 10px;
+}
+.resenha a{
+    color: var(--cor0);   
+}
+.resenha a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.resenha{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.resenha > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+/* Rodape */
+
+.footer {
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.interface {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.rodape {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.paginas, .genericas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--cor6);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor5);
+    background-color: var(--cor6);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.redes .media ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+}
+
+.media ul li:hover{
+    color: var(--cor4);
+
+}
+.media ul li {
+    margin: 0 10px;
+}
+
+.media ul li a {
+    display: inline-block;
+}
+
+.direito {
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--cor6);
+}
+
+
+/* Responsividade para o footer e elementos gerais */
+@media (max-width: 768px) {
+    /* Ajustes no header */
+    .header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin-left: 10px; /* Diminui o espaçamento entre itens do menu */
+    }
+
+    /* Ajustes na imagem de fundo */
+    .bg {
+        background-image: url('../imagens/Blog\ 1.jpg'); /* Mantém a imagem original */
+        background-size: cover; /* Garante que a imagem continue cobrindo a área */
+        background-position: center; /* Centraliza a imagem */
+        height: 100vh; /* Mantém a altura da imagem */
+        padding: 10px;
+    }
+
+    .bg h1 {
+        font-size: 2em; /* Reduz o tamanho do título para telas pequenas */
+        padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
+    }
+
+    /* Ajustes no footer */
+    .footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .footer .interface {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .paginas, .footer .genericas, .footer .redes {
+        margin-bottom: 15px;
+    }
+
+    .footer .media ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer .media ul li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes no header */
+    .header {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .menu li {
+        margin-left: 5px; /* Reduz ainda mais o espaçamento */
+    }
+
+    /* Ajustes na imagem de fundo */
+    .bg {
+        background-image: url('../imagens/Blog\ 1.jpg'); /* Mantém a imagem original */
+        background-size: cover; /* Garante que a imagem continue cobrindo a área */
+        background-position: center; /* Centraliza a imagem */
+        height: 250px; /* Ajuste para telas menores */
+    }
+
+    .bg h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
+        padding: 10px;
+    }
+
+    /* Ajustes no footer */
+    .footer {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .footer .interface {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer .paginas, .footer .genericas, .footer .redes {
+        margin-bottom: 10px;
+    }
+
+    .footer .media ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer .media ul li {
+        margin: 0 10px;
+    }
+}
+
+
+
