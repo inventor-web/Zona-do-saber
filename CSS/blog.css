@@ -289,6 +289,20 @@ a:hover {
         padding: 10px;
     }
 
+    .barra-pesquisa {
+        width: 100%;
+        padding: 0 20px; /* Adiciona espaçamento lateral */
+    }
+
+    .barra-pesquisa input {
+        width: 100%; /* Campo de pesquisa ocupa 100% da largura disponível */
+        margin-right: 0; /* Remove o espaçamento entre o campo de entrada e o botão */
+    }
+
+    .barra-pesquisa button {
+        width: auto; /* O botão terá um tamanho adequado */
+    }
+
     /* Ajustes no footer */
     .footer {
         padding: 15px 5px;
@@ -313,6 +327,20 @@ a:hover {
 
     .footer .media ul li {
         margin: 0 10px;
+    }
+}
+@media (max-width: 360px) {
+    .barra-pesquisa {
+        width: 100%;
+        padding: 0 20px; /* Adiciona espaçamento lateral */
+    }
+
+    .barra-pesquisa input {
+        width: 100%; /* Barra de pesquisa ocupa 100% da largura */
+    }
+
+    .barra-pesquisa button {
+        width: auto; /* O botão terá um tamanho adequado */
     }
 }
 
