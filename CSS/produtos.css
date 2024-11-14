@@ -145,8 +145,32 @@ a:hover {
     color: var(--cor6);
 }
 
-/* Responsividade para o footer e imagem de background */
+/* Responsividade */
 @media (max-width: 768px) {
+
+        /* Ajustes no header */
+        .header {
+            font-size: 16px;
+            padding: 10px;
+        }
+    
+        .menu li {
+            margin-left: 10px; /* Diminui o espaçamento entre itens do menu */
+        }
+    
+        /* Ajustes na imagem de fundo */
+        .bg {
+            background-image: url('../imagens/Produtos.jpg'); /* Mantém a imagem original */
+            background-size: cover; /* Garante que a imagem continue cobrindo a área */
+            background-position: center; /* Centraliza a imagem */
+            height: 100vh; /* Mantém a altura da imagem */
+            padding: 10px;
+        }
+    
+        .bg h1 {
+            font-size: 2em; /* Reduz o tamanho do título para telas pequenas */
+            padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
+        }
     /* Ajustes no footer */
     .footer {
         padding: 20px 10px;
@@ -182,6 +206,28 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    .header {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .menu li {
+        margin-left: 5px; /* Reduz ainda mais o espaçamento */
+    }
+
+    /* Ajustes na imagem de fundo */
+    .bg {
+        background-image: url('../imagens/Produtos.jpg'); /* Mantém a imagem original */
+        background-size: cover; /* Garante que a imagem continue cobrindo a área */
+        background-position: center; /* Centraliza a imagem */
+        height: 250px; /* Ajuste para telas menores */
+    }
+
+    .bg h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
+        padding: 10px;
+    }
+    
     /* Ajustes no footer */
     .footer {
         padding: 15px 5px;

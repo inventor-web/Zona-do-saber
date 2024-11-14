@@ -194,8 +194,32 @@ a:hover {
 }
 
 
-/* Responsividade para o footer */
 @media (max-width: 768px) {
+
+    /* Ajustes no header */
+    .header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin-left: 10px; /* Diminui o espaçamento entre itens do menu */
+    }
+
+    /* Ajustes na imagem de fundo */
+    .bg {
+        background-image: url('../imagens/Home.jpg'); /* Mantém a imagem original */
+        background-size: cover; /* Garante que a imagem continue cobrindo a área */
+        background-position: center; /* Centraliza a imagem */
+        height: 100vh; /* Mantém a altura da imagem */
+        padding: 10px;
+    }
+
+    .bg h1 {
+        font-size: 2em; /* Reduz o tamanho do título para telas pequenas */
+        padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
+    }
+
     /* Ajustes no footer */
     .footer {
         padding: 20px 10px;
@@ -237,7 +261,7 @@ a:hover {
     
         /* Ajustes na imagem de fundo */
         .bg {
-            background-image: url('../imagens/Blog\ 1.jpg'); /* Mantém a imagem original */
+            background-image: url('../imagens/Home.jpg'); /* Mantém a imagem original */
             background-size: cover; /* Garante que a imagem continue cobrindo a área */
             background-position: center; /* Centraliza a imagem */
             height: 250px; /* Ajuste para telas menores */
