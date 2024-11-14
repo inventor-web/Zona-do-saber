@@ -303,37 +303,26 @@ a:hover {
 
 @media (max-width: 360px) {
     /* Ajustes no header */
-    .header {
-        flex-direction: column;
-        padding: 8px;
-        font-size: 14px;
-    }
-
-    .header p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu li {
-        margin: 5px 0;
-    }
+        .header {
+            font-size: 14px;
+            padding: 8px;
+        }
+    
+        .menu li {
+            margin-left: 5px; /* Reduz ainda mais o espaçamento */
+        }
 
     /* Ajustes na imagem de fundo */
     .bg {
         background-image: url('../imagens/Home.jpg'); 
         background-size: cover; 
         background-position: center; 
-        height: 200px; 
+        height: 400px; 
         padding: 10px;
     }
 
     .bg h4 {
-        font-size: 1.2rem; 
+        font-size: 1rem; 
         padding: 0 5px;
     }
 
@@ -365,32 +354,4 @@ a:hover {
         height: auto;
     }
 
-    /* Ajustes no footer */
-    .footer {
-        padding: 15px 5px;
-        font-size: 14px;
-    }
-
-    .footer .interface {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer .paginas, .footer .genericas, .footer .redes {
-        margin-bottom: 10px;
-    }
-
-    .footer .media ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .footer .media ul li {
-        margin: 0 10px;
-    }
-
-    .footer .direito {
-        font-size: 12px;
-    }
 }
