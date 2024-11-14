@@ -16,7 +16,7 @@
     line-height: 2em;
 }
 
-body {
+body { 
     background-image: linear-gradient(to right, var(--cor6), var(--cor3));
 }
 
