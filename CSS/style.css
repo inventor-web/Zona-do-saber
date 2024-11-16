@@ -53,6 +53,7 @@ a{
     padding-right: 8px;
     border-radius: 6px;
     color: var(--cor5);
+    /*Colocar uma tag para fichar o hover a menos que seja clicado em uma outra lista*/
 }
 
 .bg{
@@ -133,7 +134,7 @@ img{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px;
+    margin-top: 100px;
 }
 
 .interface {
@@ -156,18 +157,18 @@ img{
     align-items: center;
 }
 
-a {
+.footer a {
     margin: 5px 0;
     font-size: 16px;
     color: var(--cor6);
     text-decoration: none;
 }
 
-a:hover {
+.footer a:hover {
     color: var(--cor5);
-    background-color: var(--cor6);
-    border-radius: 3px;
-    padding: 3px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor6));
+    border-radius: 4px;
+    padding: 4px;
 }
 
 .redes .media ul {
@@ -177,10 +178,6 @@ a:hover {
 
 }
 
-.media ul li:hover{
-    color: var(--cor4);
-
-}
 .media ul li {
     margin: 0 10px;
 }
@@ -266,11 +263,11 @@ a:hover {
             background-image: url('../imagens/Home.jpg'); /* Mantém a imagem original */
             background-size: cover; /* Garante que a imagem continue cobrindo a área */
             background-position: center; /* Centraliza a imagem */
-            height: 250px; /* Ajuste para telas menores */
+            height: 500px; /* Ajuste para telas menores */
         }
     
         .bg h1 {
-            font-size: 1.5em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
+            font-size: 1.1em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
             padding: 10px;
         }
     
@@ -328,7 +325,7 @@ a:hover {
 
     /* Ajustes no título da seção */
     .apresentacao h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 10px;
     }
 

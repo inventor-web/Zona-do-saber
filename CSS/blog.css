@@ -172,18 +172,18 @@ img{
     align-items: center;
 }
 
-a {
+.footer a {
     margin: 5px 0;
     font-size: 16px;
     color: var(--cor6);
     text-decoration: none;
 }
 
-a:hover {
+.footer a:hover {
     color: var(--cor5);
-    background-color: var(--cor6);
-    border-radius: 3px;
-    padding: 3px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor6));
+    border-radius: 4px;
+    padding: 4px;
 }
 
 .redes .media ul {
@@ -193,10 +193,6 @@ a:hover {
 
 }
 
-.media ul li:hover{
-    color: var(--cor4);
-
-}
 .media ul li {
     margin: 0 10px;
 }

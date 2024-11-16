@@ -37,6 +37,7 @@ a {
 }
 .header p{
     color: var(--cor6);
+    margin-left: 0px;
 }
 .menu{
     display: flex;
@@ -56,8 +57,8 @@ a {
     padding-right: 8px;
     border-radius: 6px;
     color: var(--cor5);
+    /*Colocar uma tag para fichar o hover a menos que seja clicado em uma outra lista*/
 }
-
 h1 {
     margin: 50px;
     width: 720px;
@@ -88,6 +89,7 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
 .interface {
@@ -110,18 +112,18 @@ p {
     align-items: center;
 }
 
-a {
+.footer a {
     margin: 5px 0;
     font-size: 16px;
     color: var(--cor6);
     text-decoration: none;
 }
 
-a:hover {
+.footer a:hover {
     color: var(--cor5);
-    background-color: var(--cor6);
-    border-radius: 3px;
-    padding: 3px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor6));
+    border-radius: 4px;
+    padding: 4px;
 }
 
 .redes .media ul {
@@ -131,10 +133,6 @@ a:hover {
 
 }
 
-.media ul li:hover{
-    color: var(--cor4);
-
-}
 .media ul li {
     margin: 0 10px;
 }
@@ -201,4 +199,22 @@ a:hover {
     .footer {
         padding: 10px;
     }
+}
+
+@media (max-width: 360px) {
+    /* Ajustes no header */
+        .header {
+            font-size: 14px;
+            padding: 8px;
+        }
+        .header p{
+            text-align: left;
+            margin-left: 1px;
+            text-indent: 0px;
+        }
+    
+        .menu li {
+            margin-left: 5px; /* Reduz ainda mais o espaçamento */
+        }
+
 }
