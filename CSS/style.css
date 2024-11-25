@@ -91,6 +91,7 @@ h1{
 }
 h2{
     text-align: center;
+
     margin: 70px;
 }
 img{
@@ -113,6 +114,7 @@ img{
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 800px;
+    padding: 10px;
 }
 .flex > div{
     flex: 1 1 200px;
@@ -125,6 +127,57 @@ img{
     margin: 1px;
 }
 
+/*Inscricao para Newslatter*/
+.line-footer1{
+
+    margin-top: 20px;
+    justify-items: center;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.534) 0px 0px 4px;
+}
+
+.line-footer1 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--cor0);
+    padding: 10px;
+    text-shadow: rgba(0, 0, 0, 0.849) 0px 0px 1px;
+}
+
+.line-footer1 p {
+    margin-bottom: 15px;
+}
+
+.line-footer1 input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: black;
+}
+.line-footer1 input[type="email"]:hover{
+    box-shadow: black 1px 1px 5px;
+}
+
+.line-footer1 input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line-footer1 input[type="submit"]:hover{
+    padding: 12px 22px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    box-shadow: black 1px 1px 5px;
+    border: black 1px;
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+
 /* Rodape */
 
 .footer {
@@ -134,7 +187,6 @@ img{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
 }
 
 .interface {
@@ -219,6 +271,39 @@ img{
         padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
     }
 
+    .line-footer1 input[type="email"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: black;
+    }
+    
+    .line-footer1 input[type="email"]:hover{
+        box-shadow: black 1px 1px 5px;
+    }
+    
+    .line-footer1 input[type="submit"] {
+        padding: 10px 20px;
+        background-color: var(--cor6);
+        color: var(--cor5);
+        border: solid 1px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .line-footer1 input[type="submit"]:hover{
+        padding: 12px 22px;
+        background-color: var(--cor6);
+        color: var(--cor5);
+        box-shadow: black 1px 1px 5px;
+        border: black 1px;
+        background-color: var(--cor1);
+        color: var(--cor6);
+    }
+    
+    
+
     /* Ajustes no footer */
     .footer {
         padding: 20px 10px;
@@ -263,13 +348,68 @@ img{
             background-image: url('../imagens/Home.jpg'); /* Mantém a imagem original */
             background-size: cover; /* Garante que a imagem continue cobrindo a área */
             background-position: center; /* Centraliza a imagem */
-            height: 500px; /* Ajuste para telas menores */
+            height: 550px; /* Ajuste para telas menores */
         }
     
         .bg h1 {
             font-size: 1.1em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
             padding: 10px;
         }
+    
+            /*Inscricao para Newslatter*/
+.line-footer1{
+    background-color: #dbdada62;
+    margin-top: 20px;
+    justify-items: center;
+    height: 300px;
+}
+
+.line-footer1 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--cor0);
+    padding: 5px;
+}
+
+.line-footer1 p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.line-footer1 input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: black;
+}
+
+.line-footer1 input[type="email"]:hover{
+    box-shadow: black 1px 1px 5px;
+}
+
+.line-footer1 input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line-footer1 input[type="submit"]:hover{
+    padding: 12px 22px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    box-shadow: black 1px 1px 5px;
+    border: black 1px;
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+
+
+
     
     /* Ajustes no footer */
     .footer {
@@ -317,6 +457,10 @@ img{
         height: 400px; 
         padding: 10px;
     }
+    .bg h1 {
+        font-size: 2em; /* Reduz o tamanho do título para telas pequenas */
+        padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
+    }
 
     .bg h4 {
         font-size: 1rem; 
@@ -325,7 +469,7 @@ img{
 
     /* Ajustes no título da seção */
     .apresentacao h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 10px;
     }
 
@@ -333,6 +477,79 @@ img{
         font-size: 14px;
         padding: 0 10px;
     }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 10px;
+
+    }
+    .flex > div{
+        flex: 1 1 200px;
+        margin: 10px;
+        box-shadow: black 0.1px 0.1px 2px;
+        border-radius: 3px;
+    }
+    .flex div:hover{
+        box-shadow: black -1px -1px 10px;
+        margin: 1px;
+    }
+
+
+    /*Inscricao para Newslatter*/
+.line-footer1{
+    background-color: #dbdada62;
+    margin-top: 20px;
+    justify-items: center;
+    height: 260px;
+}
+
+.line-footer1 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--cor0);
+    padding: 5px;
+}
+
+.line-footer1 p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.line-footer1 input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: black;
+}
+
+.line-footer1 input[type="email"]:hover{
+    box-shadow: black 1px 1px 5px;
+}
+
+.line-footer1 input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line-footer1 input[type="submit"]:hover{
+    padding: 12px 22px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    box-shadow: black 1px 1px 5px;
+    border: black 1px;
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+
 
     /* Ajustes na seção flex */
     .flex {
