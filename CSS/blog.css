@@ -460,6 +460,9 @@ img{
     margin-top: 20px;
     justify-items: center;
     height: 260px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .line-footer1 h2 {
