@@ -81,6 +81,14 @@
             <img src="../../imagens/Livros/O admiravel mundo novo.jfif" alt="post10">
             <p>Resenha do livro <a href="#">Admirável Mundo Novo</a></p>
         </div>
+        <div class="post">
+            <img src="../../imagens/Livros/A sutil arte de ligar o foda-se.jfif" alt="post6">
+            <p>Resenha do livro <a href="#">A Sutil Arte de Ligar o Foda-se</a></p>
+        </div>
+        <div class="post">
+            <img src="../../imagens/Livros/Como fazer amigos e influenciar.jpg" alt="post7">
+            <p>Resenha do livro <a href="post1.html">Como Fazer Amigos e Influenciar Pessoas</a></p>
+        </div>
     </section>
 
     <section class="line-footer1">
@@ -119,7 +127,7 @@
             <div class="direito">&copy; 2024 Zona do Saber. Todos os direitos reservados.</div>
         </div>
     </footer>
-
+    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.getElementById("search-input");
@@ -136,10 +144,18 @@
                         post.style.display = "none";
                     }
                 });
+                
+                // Restaurar todos os posts quando a barra de pesquisa for limpa
+                if (searchText === "") {
+                    posts.forEach(post => {
+                        post.style.display = "";
+                    });
+                }
             });
         });
     </script>
     
+
 </body>
 </html>
  
