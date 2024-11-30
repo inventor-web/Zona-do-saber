@@ -119,6 +119,27 @@
             <div class="direito">&copy; 2024 Zona do Saber. Todos os direitos reservados.</div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("search-input");
+            const posts = document.querySelectorAll(".post");
+    
+            searchInput.addEventListener("input", function () {
+                const searchText = searchInput.value.toLowerCase();
+    
+                posts.forEach(post => {
+                    const postText = post.querySelector("p").innerText.toLowerCase();
+                    if (postText.includes(searchText)) {
+                        post.style.display = "";
+                    } else {
+                        post.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
  
