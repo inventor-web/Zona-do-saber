@@ -4,189 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zona do Saber</title>
+    <link rel="stylesheet" href="../../CSS/Interface.css">
     <style>
         :root {
-            --cor0: #166088;
-            --cor1: #3581b8;
-            --cor2: #878787;
-            --cor3: #cacaca;
-            --cor4: #202022;
-            --cor5: black;
-            --cor6: white;
+    --cor0: #166088;
+    --cor1: #3581b8;
+    --cor2: #878787;
+    --cor3: #cacaca;
+    --cor4: #202022;
+    --cor5: black;
+    --cor6: white;
+}
+        /* corpo */
+        h1 {
+            color: var(--cor0);
+            margin-bottom: 30px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 2em;
+        h2 {
+            color: var(--cor0);
         }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-image: linear-gradient(to right, var(--cor6), var(--cor3));
+        img {
+            width: 100%;
         }
 
-        a {
+        p {
+            font-size: 18px;
+        }
+
+        .link{
+            color: var(--cor1);
+            font-weight: bold;
             text-decoration: none;
-            color: var(--cor6);
+
         }
-
- /*Cabecalho*/
-
-.header{
-    background-color: var(--cor0);
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 18px;
-}
-.header p{
-    color: var(--cor6);
-}
-.menu{
-    display: flex;
-}
-.menu li{
-    margin-left: 20px;
-}
-.menu li a{
-    display: block;
-    color: var(--cor6);
-    padding: 5px;
-    text-decoration: none;
-}
-.menu li a:hover{
-    background-color: var(--cor6);
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 6px;
-    color: var(--cor5);
-}
-
-        /*corpo*/
-        h1{
+        .link:hover{
             color: var(--cor0);
-        }
-        h2{
-            color: var(--cor0);
-        }
+            font-weight: bolder;
+            text-decoration: underline;
 
+        }
+        .paragrafo{
+            text-indent: 1.5em;
+            font-size: 18px;
+        }
         .main-content {
-            flex: 1;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 20px;
-            max-width: 1250px;
-        }
-
-        .corpo, .anuncios {
-            box-shadow: var(--cor5) 0.3px 0.3px 4px;
-            border-radius: 10px;
-            margin: 10px;
-            background-color: var(--cor6);
-            flex: 1;
-            padding: 10px;
-        }
-        .actualizacoes a{
-            color: var(--cor5);
-        }
-        .actualizacoes a:hover{
-            color: var(--cor);
-            text-decoration: underline;
+            margin: auto;
         }
 
         .corpo {
+            margin: 10px;
+            padding: 10px;
             width: 100%;
-            max-width: 700px;
+            max-width: 750px;
         }
 
         .anuncios {
+            border-radius: 5px;
+            margin-top: 50px;
+            padding: 10px;
             width: 100%;
             max-width: 400px;
         }
 
-/*Rodape*/
+        .actualizacoes a {
+            color: var(--cor5);
+            text-decoration: none;
+        }
 
-.footer {
-    padding: 20px;
-    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-}
+        .actualizacoes a:hover {
+            color: var(--cor);
+            text-decoration: underline;
+        }
 
-.interface {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-}
+        /*Comentarios*/
+        
+        .comentarios {
+            width: 100%;
+            max-width: auto;
+            margin: 20px auto; /* Espaço superior e inferior */
+            padding: 20px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+        }
 
-.rodape {
-    flex: 1;
-    padding: 20px;
-    min-width: 200px;
-}
+        .comentarios h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #333;
+        }
 
-.paginas, .genericas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .comentarios form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-.paginas a, .genericas a {
-    margin: 5px 0;
-    font-size: 16px;
-    color: var(--cor6);
-    text-decoration: none;
-}
+        .comentarios form input,
+        .comentarios form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
 
-.paginas a:hover{
-    color: var(--cor5);
-    background-color: var(--cor6);
-    border-radius: 3px;
-    padding: 3px;
-}
+        .comentarios form button {
+            padding: 10px 15px;
+            border: none;
+            background: var(--cor1);
+            color: white;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.genericas a:hover{
-    color: var(--cor5);
-    background-color: var(--cor6);
-    border-radius: 3px;
-    padding: 3px;
-}
-.redes a:hover{
-    background-color: var(--cor3);
-    border-radius: 6px;
-}
+        .comentarios form button:hover {
+            background: var(--cor0);
+        }
 
-.redes .media ul {
-    display: flex;
-    padding: 0;
-    list-style: none;
-}
+        .comentarios-lista {
+            margin-top: 20px;
+        }
 
-.media ul li {
-    margin: 0 10px;
-}
+        .comentarios-lista p {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
 
-.media ul li a {
-    display: inline-block;
-}
+        .comentarios-lista .comentario-nome {
+            font-weight: bold;
+            color: #007bff;
+        }
 
-.direito {
-    padding: 10px 0;
-    font-size: 14px;
-    color: var(--cor6);
-}
+        .comentarios-lista .comentario-email {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .comentarios-lista .comentario-texto {
+            margin-top: 5px;
+            color: var(--cor5);
+        }
+
+
         /* Responsividade */
         @media (max-width: 768px) {
             .main-content {
@@ -200,6 +165,7 @@
                 margin: 10px 0;
             }
         }
+
     </style>
 </head>
 <body>
@@ -224,24 +190,53 @@
     </header>
 
     <main class="main-content">
+        <!-- Seção de conteúdo principal -->
         <section class="corpo">
             <div class="conteudo">
                 <h1>Resenha: Como Fazer Amigos e Influenciar Pessoas</h1>
+                <img src="../../imagens/Livros/Como fazer amigos e influenciar.jpg" alt="imagem de livro">
                 <p><strong>Autor:</strong> Dale Carnegie</p>
                 <p><strong>Publicação:</strong> 1936</p>
-                <p><strong>Resumo:</strong> *Como Fazer Amigos e Influenciar Pessoas* é um clássico atemporal de Dale Carnegie...</p>
-                <h2>Principais Lições:</h2>
+                <p><strong>Resumo:</strong> <i>Como Fazer Amigos e Influenciar Pessoas é um clássico atemporal de Dale
+                     Carnegie que aborda sobre comunicacao, lideranca e influencia.</i></p>
+                <hr>
+                <br>
+                <p class="paragrafo"><strong>Ola, tudo bem?</strong> Nesta Resenha vou abordar sobre o livro que mais 
+                    influenciou a minha positivamente, atraves dos ensinamentos desse livro sai de um simples estudante para o lider da turma.</p>
+                <h2>Quais sao as principais Lições do livro?</h2>
                 <ul>
-                    <li><strong>1. Mostre Interesse Verdadeiro:</strong> Carnegie destaca que, para ser interessante, é necessário se interessar verdadeiramente pelos outros. Demonstre curiosidade e faça perguntas abertas.</li>
-                    <li><strong>2. Valorize os Outros:</strong> A apreciação sincera e elogios construtivos podem transformar relacionamentos, criando um ambiente positivo onde as pessoas se sentem reconhecidas e valorizadas.</li>
-                    <li><strong>3. Seja um Bom Ouvinte:</strong> Ouvir com atenção demonstra respeito e é uma forma poderosa de ganhar a confiança dos outros.</li>
-                    <li><strong>4. Evite Discussões:</strong> O livro sugere que, em vez de vencer discussões, é melhor compreendê-las e buscar um entendimento comum.</li>
+                    <li><strong>1. Mostre Interesse Verdadeiro:</strong> Carnegie destaca que, para ser interessante, é
+                         necessário se interessar verdadeiramente pelos outros. Demonstre curiosidade e faça perguntas abertas.</li>
+                    <li><strong>2. Valorize os Outros:</strong> A apreciação sincera e elogios construtivos podem transformar
+                         relacionamentos, criando um ambiente positivo onde as pessoas se sentem reconhecidas e valorizadas.</li>
+                    <li><strong>3. Seja um Bom Ouvinte:</strong> Ouvir com atenção demonstra respeito e é uma forma poderosa
+                         de ganhar a confiança dos outros.</li>
+                    <li><strong>4. Evite Discussões:</strong> O livro sugere que, em vez de vencer discussões, é melhor 
+                        compreendê-las e buscar um entendimento comum.</li>
                 </ul>
-    
-                <p><strong>Conclusão:</strong> Este livro é uma leitura essencial para qualquer pessoa interessada em desenvolver habilidades sociais, seja em um contexto profissional ou pessoal. Ele ensina que, mais do que manipular, a chave para influenciar está em estabelecer uma conexão genuína e oferecer valor aos outros.</p>
-            </div>
+                
+                <h2>Porque ler esse livro, sera que vale a pena?</h2>
+                <p class="paragrafo">Este livro recomenda-se para todo aquele que deseja evoluir em comunicacao e influencia,
+                     o ponto positivo eque as licoes do livro nao sao apenas viradas para empresarios, mas para todo que deseja levar a sua comunicacao para o proximo nivel. 
+                     Por tanto este livro é uma leitura essencial para qualquer pessoa interessada em desenvolver habilidades sociais,
+                    seja em um contexto profissional ou pessoal. Ele ensina que, mais do que manipular, a chave para influenciar está em estabelecer uma conexão genuína e 
+                    oferecer valor aos outros.</p>
+                
+                <h2>Onde ter acesso ao livro?</h2>
+                <p class="paragrafo">Para poder ter acesso ao classico: "Como fazer amigos e influenciar pessoas" voce pode acessar na amazon. La voce compra o livro na versao fisica ou digital
+                    caso prefira.</p>
+                    <strong>
+                        <p>Se estiver interessado na versao digital <a href="#" class="link">Clique aqui</a></p>
+                    </strong>
+                    <strong>
+                        <p>Se estiver interessado na versao fisica <a href="#" class="link">Clique aqui</a></p>
+                    </strong>
+                <p>Comprando o livro atraves desses links fara com que o projecto continue, o meu plano tem a ver com criar uma comunidade 
+                    que possa compartilhar o seu conhecimento e debater sobre as suas esperiencias literarias</p>
+        </div>
         </section>
-
+        
+        <!-- Seção de anúncios -->
         <section class="anuncios">
             <div class="actualizacoes">
                 <h2>Anúncios</h2>
@@ -254,8 +249,35 @@
                 <p><strong>Resenha:</strong> <a href="#">Mindset - A Nova Psicologia do Sucesso</a></p>
             </div>
         </section>
+        
+        <!-- Seção de comentários -->
+        <div class="comentarios">
+            <h2>Comentários</h2>
+            <form id="form-comentarios">
+                <input type="text" id="nome" placeholder="Seu nome" required />
+                <input type="email" id="email" placeholder="Seu email" required />
+                <textarea id="comentario" placeholder="Escreva seu comentário" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="comentarios-lista">
+                <p id="mensagem-vazia">Nenhum comentário ainda. Seja o primeiro!</p>
+            </div>
+        </div>
     </main>
-
+    <section class="line-footer1">
+        <h2>
+            QUER FAZER PARTE DO ZONA DO SABER?
+        </h2>
+        <p>
+            Inscreva-se em nossa newsletter e receba as principais informacoes do saber em seu E-mail
+        </p>
+        <form action="">
+            <input type="email" placeholder="Insira o seu E-mail aqui">
+            <input type="submit" value="Cadastrar">
+        </form>
+    
+    </section>
+    
     <footer class="footer">
         <div class="interface">
     
@@ -284,6 +306,7 @@
     
                 <div class="direito">&copy; 2024 Zona do Saber. Todos os direitos reservados.</div>
         </div>
-    </footer>
+    </footer>  
+
 </body>
 </html>

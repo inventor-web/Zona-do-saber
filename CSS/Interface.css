@@ -56,86 +56,6 @@
     color: var(--cor5);
 }
 
-/* Background da Página Inicial */
-.bg {
-    background-image: url('../imagens/Blog\ 1.jpg'); /* Caminho da imagem */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--cor5);
-    padding: 20px;
-}
-
-.bg h1 {
-    padding: 50px; /* Ajuste para centralização e melhor exibição em dispositivos menores */
-    text-shadow: var(--cor6) 1px 1px 3px;
-    font-size: 2.5em; /* Reduz o tamanho do texto em dispositivos móveis */
-    max-width: 90%;
-}
-
-/* Estilo para a Barra de Pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    width: 400px;
-    margin: 20px auto;
-    margin-top: 100px;
-    padding: 5px 10px;
-    overflow: hidden;
-    box-shadow: var(--cor5) 1px 1px 3px;   
-}
-
-.search-container:hover{
-    box-shadow: var(--cor5) 1px 1px 5px; 
-}
-
-.search-input {
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    outline: none;
-}
-
-
-/*Conteudo*/
-
-h2{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-.resenha p{
-    margin: 10px 5px 10px;
-}
-.resenha a{
-    color: var(--cor0);   
-}
-.resenha a:hover{
-    color: var(--cor1);
-    text-decoration: underline;
-}
-img{
-    max-width: 100%;
-    display: block;
-}
-.resenha{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-.resenha > div{
-    flex: 1 1 200px;
-    margin: 10px;
-}
-
 /*Inscricao para Newslatter*/
 .line-footer1{
     margin-top: 20px;
@@ -149,7 +69,6 @@ img{
     margin-bottom: 10px;
     color: var(--cor0);
     padding: 10px;
-    text-shadow: rgba(0, 0, 0, 0.849) 0px 0px 1px;
 }
 
 .line-footer1 p {
@@ -253,9 +172,8 @@ img{
     color: var(--cor6);
 }
 
-
-/* Responsividade para o footer e elementos gerais */
 @media (max-width: 768px) {
+
     /* Ajustes no header */
     .header {
         font-size: 16px;
@@ -268,7 +186,7 @@ img{
 
     /* Ajustes na imagem de fundo */
     .bg {
-        background-image: url('../imagens/Blog\ 1.jpg'); /* Mantém a imagem original */
+        background-image: url('../imagens/Home.jpg'); /* Mantém a imagem original */
         background-size: cover; /* Garante que a imagem continue cobrindo a área */
         background-position: center; /* Centraliza a imagem */
         height: 100vh; /* Mantém a altura da imagem */
@@ -280,26 +198,38 @@ img{
         padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
     }
 
-    /* Estilo para a Barra de Pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    width: 400px;
-    margin-top: 50px;
-    margin: 20px auto;
-    padding: 5px 10px;
-    overflow: hidden;
-    box-shadow: var(--cor5) 1px 1px 3px;   
-}
-
-.search-input {
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    outline: none;
-}
-
+    .line-footer1 input[type="email"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: black;
+    }
+    
+    .line-footer1 input[type="email"]:hover{
+        box-shadow: black 1px 1px 5px;
+    }
+    
+    .line-footer1 input[type="submit"] {
+        padding: 10px 20px;
+        background-color: var(--cor6);
+        color: var(--cor5);
+        border: solid 1px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .line-footer1 input[type="submit"]:hover{
+        padding: 12px 22px;
+        background-color: var(--cor6);
+        color: var(--cor5);
+        box-shadow: black 1px 1px 5px;
+        border: black 1px;
+        background-color: var(--cor1);
+        color: var(--cor6);
+    }
+    
+    
 
     /* Ajustes no footer */
     .footer {
@@ -329,141 +259,35 @@ img{
 }
 
 @media (max-width: 480px) {
-    /* Ajustes no header */
-    .header {
-        font-size: 14px;
-        padding: 8px;
-    }
 
-    .menu li {
-        margin-left: 5px; /* Reduz ainda mais o espaçamento */
-    }
-
-    /* Ajustes na imagem de fundo */
-    .bg {
-        background-image: url('../imagens/Blog\ 1.jpg'); /* Mantém a imagem original */
-        background-size: cover; /* Garante que a imagem continue cobrindo a área */
-        background-position: center; /* Centraliza a imagem */
-        height: 250px; /* Ajuste para telas menores */
-    }
-
-    .bg h1 {
-        font-size: 1.5em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
-        padding: 10px;
-    }
-
-    /* Estilo para a Barra de Pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    width: 300px;
-    margin-top: 50px;
-    margin: 20px auto;
-    padding: 5px 10px;
-    overflow: hidden;
-    box-shadow: var(--cor5) 1px 1px 3px;   
-}
-
-.search-input {
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    outline: none;
-}
-
-    .barra-pesquisa {
-        width: 100%;
-        padding: 0 20px; /* Adiciona espaçamento lateral */
-    }
-
-    .barra-pesquisa input {
-        width: 100%; /* Campo de pesquisa ocupa 100% da largura disponível */
-        margin-right: 0; /* Remove o espaçamento entre o campo de entrada e o botão */
-    }
-
-    .barra-pesquisa button {
-        width: auto; /* O botão terá um tamanho adequado */
-    }
-
-    /* Ajustes no footer */
-    .footer {
-        padding: 15px 5px;
-        font-size: 14px;
-    }
-
-    .footer .interface {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .footer .paginas, .footer .genericas, .footer .redes {
-        margin-bottom: 10px;
-    }
-
-    .footer .media ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .footer .media ul li {
-        margin: 0 10px;
-    }
-}
-@media (max-width: 360px) {
-    .barra-pesquisa {
-        width: 100%;
-        padding: 0 20px; /* Adiciona espaçamento lateral */
-        justify-content: center;
-    }
-
-    .barra-pesquisa input {
-        width: 100%; /* Barra de pesquisa ocupa 100% da largura */
-        justify-content: center;
-    }
-
-    .barra-pesquisa button {
-        width: auto; /* O botão terá um tamanho adequado */
-    }
-    .search-container{
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
+        /* Ajustes no header */
+        .header {
+            font-size: 14px;
+            padding: 8px;
+        }
     
-
-/* Estilo para a Barra de Pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    width: 250px;
-    margin-top: 50px;
-    margin: 20px auto;
-    padding: 5px 10px;
-    overflow: hidden;
-    box-shadow: var(--cor5) 1px 1px 3px;   
-}
-
-.search-input {
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    outline: none;
-}
-
-}
-
-   /*Inscricao para Newslatter*/
-   .line-footer1{
+        .menu li {
+            margin-left: 5px; /* Reduz ainda mais o espaçamento */
+        }
+    
+        /* Ajustes na imagem de fundo */
+        .bg {
+            background-image: url('../imagens/Home.jpg'); /* Mantém a imagem original */
+            background-size: cover; /* Garante que a imagem continue cobrindo a área */
+            background-position: center; /* Centraliza a imagem */
+            height: 550px; /* Ajuste para telas menores */
+        }
+    
+        .bg h1 {
+            font-size: 1.1em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
+            padding: 10px;
+        }
+    
+            /*Inscricao para Newslatter*/
+.line-footer1{
     margin-top: 20px;
     justify-items: center;
-    height: 260px;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
+    height: 300px;
 }
 
 .line-footer1 h2 {
@@ -508,4 +332,164 @@ img{
     border: black 1px;
     background-color: var(--cor1);
     color: var(--cor6);
+}
+
+
+
+    
+    /* Ajustes no footer */
+    .footer {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .footer .interface {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer .paginas, .footer .genericas, .footer .redes {
+        margin-bottom: 10px;
+    }
+
+    .footer .media ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer .media ul li {
+        margin: 0 10px;
+    }
+} 
+
+@media (max-width: 360px) {
+    /* Ajustes no header */
+        .header {
+            font-size: 14px;
+            padding: 8px;
+        }
+    
+        .menu li {
+            margin-left: 5px; /* Reduz ainda mais o espaçamento */
+        }
+
+    /* Ajustes na imagem de fundo */
+    .bg {
+        background-image: url('../imagens/Home.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        height: 400px; 
+        padding: 10px;
+    }
+    .bg h1 {
+        font-size: 2em; /* Reduz o tamanho do título para telas pequenas */
+        padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
+    }
+
+    .bg h4 {
+        font-size: 1rem; 
+        padding: 0 5px;
+    }
+
+    /* Ajustes no título da seção */
+    .apresentacao h1 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .paragrafo {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 10px;
+
+    }
+    .flex > div{
+        flex: 1 1 200px;
+        margin: 10px;
+        box-shadow: black 0.1px 0.1px 2px;
+        border-radius: 3px;
+    }
+    .flex div:hover{
+        box-shadow: black -1px -1px 10px;
+        margin: 1px;
+    }
+
+
+    /*Inscricao para Newslatter*/
+.line-footer1{
+    margin-top: 20px;
+    justify-items: center;
+    height: 260px;
+}
+
+.line-footer1 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--cor0);
+    padding: 5px;
+}
+
+.line-footer1 p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.line-footer1 input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: black;
+}
+
+.line-footer1 input[type="email"]:hover{
+    box-shadow: black 1px 1px 5px;
+}
+
+.line-footer1 input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line-footer1 input[type="submit"]:hover{
+    padding: 12px 22px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border: none;
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+
+
+    /* Ajustes na seção flex */
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .flex > div {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .flex img {
+        width: 100%;
+        height: auto;
+    }
+
 }
