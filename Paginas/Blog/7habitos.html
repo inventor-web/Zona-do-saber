@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona do Saber</title>
+    <link rel="stylesheet" href="../../CSS/Interface.css">
+    <script src="../../Js/comentarios.js"></script>
+    <style>
+        :root {
+    --cor0: #166088;
+    --cor1: #3581b8;
+    --cor2: #878787;
+    --cor3: #cacaca;
+    --cor4: #202022;
+    --cor5: black;
+    --cor6: white;
+}
+        /* corpo */
+        h1 {
+            color: var(--cor0);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--cor0);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .link{
+            color: var(--cor1);
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        .link:hover{
+            color: var(--cor0);
+            font-weight: bolder;
+            text-decoration: underline;
+
+        }
+        .paragrafo{
+            text-indent: 1.5em;
+            font-size: 18px;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        .corpo {
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 750px;
+        }
+
+        .anuncios {
+            border-radius: 5px;
+            margin-top: 50px;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .actualizacoes a {
+            color: var(--cor5);
+            text-decoration: none;
+        }
+
+        .actualizacoes a:hover {
+            color: var(--cor);
+            text-decoration: underline;
+        }
+
+        /*Comentarios*/
+        
+        .comentarios {
+            width: 100%;
+            max-width: auto;
+            margin: 20px auto; /* Espaço superior e inferior */
+            padding: 20px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+        }
+
+        .comentarios h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .comentarios form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .comentarios form input,
+        .comentarios form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .comentarios form button {
+            padding: 10px 15px;
+            border: none;
+            background: var(--cor1);
+            color: white;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comentarios form button:hover {
+            background: var(--cor0);
+        }
+
+        .comentarios-lista {
+            margin-top: 20px;
+        }
+
+        .comentarios-lista p {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .comentarios-lista .comentario-nome {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .comentarios-lista .comentario-email {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .comentarios-lista .comentario-texto {
+            margin-top: 5px;
+            color: var(--cor5);
+        }
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .corpo, .anuncios {
+                width: 100%;
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p>ZONA DO SABER</p>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+                <li>
+                    <a href="Paginas/Produtos/Produtos.html">PRODUTOS</a>
+                </li>
+                <li>
+                    <a href="Paginas/Sobre/Sobre.html">SOBRE</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Seção de conteúdo principal -->
+        <section class="corpo">
+            <div class="conteudo">
+                <h1>Resenha: Como Fazer Amigos e Influenciar Pessoas</h1>
+                <img src="../../imagens/Livros/Como fazer amigos e influenciar.jpg" alt="imagem de livro">
+                <p><strong>Autor:</strong> Dale Carnegie</p>
+                <p><strong>Publicação:</strong> 1936</p>
+                <p><strong>Resumo:</strong> <i>Como Fazer Amigos e Influenciar Pessoas é um clássico atemporal de Dale
+                     Carnegie que aborda sobre comunicacao, lideranca e influencia.</i></p>
+                <hr>
+                <br>
+                <p class="paragrafo"><strong>Ola, tudo bem?</strong> Nesta Resenha vou abordar sobre o livro que mais 
+                    influenciou a minha positivamente, atraves dos ensinamentos desse livro sai de um simples estudante para o lider da turma.</p>
+                <h2>Quais sao as principais Lições do livro?</h2>
+                <ul>
+                    <li><strong>1. Mostre Interesse Verdadeiro:</strong> Carnegie destaca que, para ser interessante, é
+                         necessário se interessar verdadeiramente pelos outros. Demonstre curiosidade e faça perguntas abertas.</li>
+                    <li><strong>2. Valorize os Outros:</strong> A apreciação sincera e elogios construtivos podem transformar
+                         relacionamentos, criando um ambiente positivo onde as pessoas se sentem reconhecidas e valorizadas.</li>
+                    <li><strong>3. Seja um Bom Ouvinte:</strong> Ouvir com atenção demonstra respeito e é uma forma poderosa
+                         de ganhar a confiança dos outros.</li>
+                    <li><strong>4. Evite Discussões:</strong> O livro sugere que, em vez de vencer discussões, é melhor 
+                        compreendê-las e buscar um entendimento comum.</li>
+                </ul>
+                
+                <h2>Porque ler esse livro, sera que vale a pena?</h2>
+                <p class="paragrafo">Este livro recomenda-se para todo aquele que deseja evoluir em comunicacao e influencia,
+                     o ponto positivo eque as licoes do livro nao sao apenas viradas para empresarios, mas para todo que deseja levar a sua comunicacao para o proximo nivel. 
+                     Por tanto este livro é uma leitura essencial para qualquer pessoa interessada em desenvolver habilidades sociais,
+                    seja em um contexto profissional ou pessoal. Ele ensina que, mais do que manipular, a chave para influenciar está em estabelecer uma conexão genuína e 
+                    oferecer valor aos outros.</p>
+                
+                <h2>Onde ter acesso ao livro?</h2>
+                <p class="paragrafo">Para poder ter acesso ao classico: "Como fazer amigos e influenciar pessoas" voce pode acessar na amazon. La voce compra o livro na versao fisica ou digital
+                    caso prefira.</p>
+                    <strong>
+                        <p>Se estiver interessado na versao digital <a href="#" class="link">Clique aqui</a></p>
+                    </strong>
+                    <strong>
+                        <p>Se estiver interessado na versao fisica <a href="#" class="link">Clique aqui</a></p>
+                    </strong>
+                <p>Comprando o livro atraves desses links fara com que o projecto continue, o meu plano tem a ver com criar uma comunidade 
+                    que possa compartilhar o seu conhecimento e debater sobre as suas esperiencias literarias</p>
+        </div>
+        </section>
+        
+        <!-- Seção de anúncios -->
+        <section class="anuncios">
+            <div class="actualizacoes">
+                <h2>Anúncios</h2>
+                <p>Aqui você encontra os melhores livros sobre desenvolvimento pessoal.</p>
+                <a href="#">Confira mais!</a>
+                <h2>Outros Posts</h2>
+                <p><strong>Resenha:</strong> <a href="#">O Poder do Hábito</a></p>
+                <p><strong>Resenha:</strong> <a href="#">A arte da Guerra</a></p>
+                <p><strong>Resenha:</strong> <a href="#">Inteligência Emocional</a></p>
+                <p><strong>Resenha:</strong> <a href="#">Mindset - A Nova Psicologia do Sucesso</a></p>
+            </div>
+        </section>
+        
+        <!-- Seção de comentários -->
+        <div class="comentarios">
+            <h2>Comentários</h2>
+            <form id="form-comentarios">
+                <input type="text" id="nome" placeholder="Seu nome" required />
+                <input type="email" id="email" placeholder="Seu email" required />
+                <textarea id="comentario" placeholder="Escreva seu comentário" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="comentarios-lista">
+                <p id="mensagem-vazia">Nenhum comentário ainda. Seja o primeiro!</p>
+            </div>
+        </div>
+    </main>
+    <section class="line-footer1">
+        <h2>
+            QUER FAZER PARTE DO ZONA DO SABER?
+        </h2>
+        <p>
+            Inscreva-se em nossa newsletter e receba as principais informacoes do saber em seu E-mail
+        </p>
+        <form action="">
+            <input type="email" placeholder="Insira o seu E-mail aqui">
+            <input type="submit" value="Cadastrar">
+        </form>
+    
+    </section>
+    
+    <footer class="footer">
+        <div class="interface">
+    
+            <section class="paginas">
+                <a href="Paginas/Paginas genericas/Paginas genericas.html">Termos de uso</a>
+                <a href="Paginas/Paginas genericas/Paginas genericas.html">Políticas de Privacidade</a>
+                <a href="Paginas/Paginas genericas/Paginas genericas.html">Contacto</a>
+            </section>
+    
+            <section class="genericas">
+                
+                <a href="Paginas/Blog/blog.html">Blog</a>
+                <a href="Paginas/Produtos/Produtos.html">Produtos</a>
+                <a href="Paginas/Sobre/Sobre.html">Sobre Mim</a>
+            </section>
+    
+            <section class="redes">
+                <div class="media">
+                    <ul>
+                        <li><a href="#"><img src="../../imagens/Logos/fb.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../../imagens/Logos/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="../../imagens/Logos/youtube.png" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+            </section>
+    
+                <div class="direito">&copy; 2024 Zona do Saber. Todos os direitos reservados.</div>
+        </div>
+    </footer>  
+
+</body>
+</html>

@@ -81,11 +81,11 @@ h4{
 
 h1{
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-bottom: 30px;
 }
 .paragrafo{
-    margin-left: 50px;
+    margin-left: 60px;
     margin-bottom: 50px;
     font-size: 16px;
 }
@@ -101,13 +101,13 @@ img{
 .flex h3{
     text-align: center;
     padding: 10px;
-    color: black;
+    color: var(--cor5);
     
 }
 .flex p{
     padding: 7px;
     font-size: 16px;
-    color: black;
+    color: var(--cor5);
 }
 .flex{
     display: flex;
@@ -141,7 +141,6 @@ img{
     margin-bottom: 10px;
     color: var(--cor0);
     padding: 10px;
-    text-shadow: rgba(0, 0, 0, 0.849) 0px 0px 1px;
 }
 
 .line-footer1 p {
@@ -304,7 +303,7 @@ img{
     
     
 
-    /* Ajustes no footer */
+/* Ajustes no footer */
     .footer {
         padding: 20px 10px;
         text-align: center;
@@ -355,58 +354,87 @@ img{
             font-size: 1.1em; /* Ajusta o tamanho do título para dispositivos muito pequenos */
             padding: 10px;
         }
+
+        h1{
+            margin-top: 60px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        .paragrafo{
+            margin-left: 30px;
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
     
-            /*Inscricao para Newslatter*/
-.line-footer1{
-    background-color: #dbdada62;
-    margin-top: 20px;
-    justify-items: center;
-    height: 300px;
-}
+        }
+        .flex > div{
+            flex: 1 1 200px;
+            margin: 10px;
+            box-shadow: black 0.1px 0.1px 2px;
+            border-radius: 3px;
+        }
+        .flex div:hover{
+            box-shadow: black -1px -1px 10px;
+            margin: 1px;
+        }
+    
+        /*Inscricao para Newslatter*/
+        .line-footer1{
+            margin-top: 20px;
+            justify-items: center;
+            height: 300px;
+        }
 
-.line-footer1 h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: var(--cor0);
-    padding: 5px;
-}
+        .line-footer1 h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--cor0);
+            padding: 5px;
+        }
 
-.line-footer1 p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding: 10px;
-}
+        .line-footer1 p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding: 10px;
+        }
 
-.line-footer1 input[type="email"] {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    border: solid 1px;
-    border-color: black;
-}
+        .line-footer1 input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            border: solid 1px;
+            border-color: black;
+        }
 
-.line-footer1 input[type="email"]:hover{
-    box-shadow: black 1px 1px 5px;
-}
+        .line-footer1 input[type="email"]:hover{
+            box-shadow: black 1px 1px 5px;
+        }
 
-.line-footer1 input[type="submit"] {
-    padding: 10px 20px;
-    background-color: var(--cor6);
-    color: var(--cor5);
-    border: solid 1px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.line-footer1 input[type="submit"]:hover{
-    padding: 12px 22px;
-    background-color: var(--cor6);
-    color: var(--cor5);
-    box-shadow: black 1px 1px 5px;
-    border: black 1px;
-    background-color: var(--cor1);
-    color: var(--cor6);
-}
+        .line-footer1 input[type="submit"] {
+            padding: 10px 20px;
+            background-color: var(--cor6);
+            color: var(--cor5);
+            border: solid 1px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .line-footer1 input[type="submit"]:hover{
+            padding: 12px 22px;
+            background-color: var(--cor6);
+            color: var(--cor5);
+            box-shadow: black 1px 1px 5px;
+            border: black 1px;
+            background-color: var(--cor1);
+            color: var(--cor6);
+        }
 
 
 
@@ -461,6 +489,16 @@ img{
         font-size: 2em; /* Reduz o tamanho do título para telas pequenas */
         padding: 20px; /* Menor espaçamento para o título em dispositivos móveis */
     }
+    h1{
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+    }
+    .paragrafo{
+        margin-left: 25px;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
 
     .bg h4 {
         font-size: 1rem; 
@@ -483,7 +521,7 @@ img{
         flex-wrap: wrap;
         margin: 0 auto;
         max-width: 800px;
-        padding: 10px;
+        padding: 20px;
 
     }
     .flex > div{
@@ -496,11 +534,14 @@ img{
         box-shadow: black -1px -1px 10px;
         margin: 1px;
     }
-
+    .flex p{
+        padding: 7px;
+        font-size: 16px;
+        color: black;
+    }
 
     /*Inscricao para Newslatter*/
 .line-footer1{
-    background-color: #dbdada62;
     margin-top: 20px;
     justify-items: center;
     height: 260px;

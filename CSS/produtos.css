@@ -75,6 +75,40 @@
     padding: 20px;
 }
 
+/*Conteudo*/
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.resenha p{
+    margin: 10px 5px 10px;
+}
+.resenha a{
+    color: var(--cor0);   
+}
+.resenha a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.resenha{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.resenha > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+
 /* Rodape */
 
 .footer {
