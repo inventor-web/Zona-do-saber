@@ -68,6 +68,58 @@ p{
     color: var(--cor5);
 }
 
+    /*Inscricao para Newslatter*/
+    .line-footer1{
+        margin-top: 20px;
+        justify-items: center;
+        height: 270px;
+        background-color: var(--cor6);
+    }
+
+    .line-footer1 h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: var(--cor0);
+        padding: 5px;
+    }
+    
+    .line-footer1 p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .line-footer1 input[type="email"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: black;
+    }
+    
+    .line-footer1 input[type="email"]:hover{
+        box-shadow: black 1px 1px 5px;
+    }
+    
+    .line-footer1 input[type="submit"] {
+        padding: 10px 20px;
+        background-color: var(--cor6);
+        color: var(--cor5);
+        border: solid 1px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .line-footer1 input[type="submit"]:hover{
+        padding: 12px 22px;
+        background-color: var(--cor6);
+        color: var(--cor5);
+        box-shadow: black 1px 1px 5px;
+        border: black 1px;
+        background-color: var(--cor1);
+        color: var(--cor6);
+    }
+    
 
 /*Rodape*/
 
